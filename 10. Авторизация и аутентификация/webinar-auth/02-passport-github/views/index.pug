@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .container
+    h4 Main Page
+    p
+      a(href="/private" class="btn btn-warning") Secret Page
+
+    form.form-horizontal(id="form" class="col-xs-6")
+      .row.form-inline
+        label(for="username" class="col-xs-3") Name
+        input(class="form-control col-xs-3" type="text" name="username" id="username")
+      .row.form-inline
+        label(for="password" class="col-xs-3") Password
+        input(class="form-control col-xs-3" type="text" name="password" id="password")
+      .row.form-inline
+        input(class="btn btn-primary col-xs-3" type="submit" value="Send")
+        input(class="btn btn-default col-xs-3 col-xs-offset-1" type="reset" value="reset")
+
+    .status.text-info
+    button.del(type="button" class="btn btn-danger") Logout
+    a(href="/auth/github" class="btn btn-warning col-xs-offset-1") Github

@@ -1,0 +1,33 @@
+#new-progect-popup
+  .modal-wrapper
+    .modal-header
+      button.b-close(type="button")
+      h4.modal-title Добавление проекта
+    .modal-body
+      form.form#add-new-project(role="form" enctype="multipart/form-data" method="POST" action="/work")
+        //- Вывод сообщений с сервера
+        .server-mes.error-mes
+        .server-mes.success-mes
+        //- Название проекта
+        .form-group
+          label.label(for="projectName") Название проекта
+          input.input#projectName(name="projectName", type="text", placeholder="Введите название", qtip-content="Вы не ввели название")
+        //- Картинка проекта
+        .form-group
+          .fileupload-wrapper#uploadfile
+            span.label Картинка проекта
+            label.fileupload-lable
+              input.fileupload#fileupload(type="file", name="file" qtip-content="Вы не выбрали изображение" qtip-position="right")
+              input#fileurl(type="hidden", name="fileurl")
+            input.input#filename(name="filename", placeholder="Загрузите изображение", disabled, qtip-content="Вы не выбрали изображение")
+        //- URL проекта
+        .form-group
+          label.label(for="projectUrl") URL проекта
+          input.input#projectUrl(name="projectUrl", type="text", placeholder="Добавьте ссылку", qtip-content="Вы не добавили ссылку")
+        //- Описание
+        .form-group
+          label.label(for="projectDesc") Описание
+          textarea.textarea#projectDesc(name="text", rows="3", placeholder="Пара слов о вашем проекте", qtip-content="Описание проекта обязательно")
+        //- Кнопка "Отправить"
+        .btn-wrapp
+          button.btn(type="submit") Добавить

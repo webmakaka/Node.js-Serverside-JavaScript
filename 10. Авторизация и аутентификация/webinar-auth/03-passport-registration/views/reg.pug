@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .container
+    h4 Registration
+    p
+      a(href="/" class="btn btn-warning") На главную
+
+    form.form-horizontal(class="col-xs-6" action='/registration' method='POST')
+      .row.form-inline
+        label(for="username" class="col-xs-3") Логин
+        input(class="form-control col-xs-3" type="text" name="username")
+      .row.form-inline
+        label(for="password" class="col-xs-3") Пароль
+        input(class="form-control col-xs-3" type="text" name="password")
+      .row.form-inline
+        label(for="username" class="col-xs-3") Email
+        input(class="form-control col-xs-3" type="text" name="email")
+      .row.form-inline
+        label(for="username" class="col-xs-3") Имя
+        input(class="form-control col-xs-3" type="text" name="name")
+      .row.form-inline
+        button(class="btn btn-primary col-xs-3 col-sm-6" type="submit") Регистрация
+    
+      if (message)
+        .status.alert.alert-warning(role="alert") #{message}

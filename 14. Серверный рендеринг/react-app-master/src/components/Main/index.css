@@ -1,0 +1,37 @@
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-info {
+  width: 100%;
+}
+
+.film-list {
+  margin: 20px 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.no-data {
+  color: var(--color-background);
+  font-family: var(--sign-font);
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding-bottom: 5 rem;
+}
+
+.film-list__item {
+  width: 225px;
+  min-height: 380px;
+  margin: 15px;
+}

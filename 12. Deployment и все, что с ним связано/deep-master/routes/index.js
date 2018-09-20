@@ -1,0 +1,9 @@
+const HttpError = require('../error');
+
+module.exports = (app) => {
+  app.use('/api', require('./api'));
+  app.get('/', (req, res) => {
+    console.log('request.....')
+    throw new HttpError('API is available on /api', 404);
+  });
+};

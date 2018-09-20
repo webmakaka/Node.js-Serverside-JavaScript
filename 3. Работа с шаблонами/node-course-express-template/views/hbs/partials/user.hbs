@@ -1,0 +1,8 @@
+{{!-- only output author name if an author exists --}}
+<ul class="user-info">
+    {{#if first_name}}
+        <li>{{first_name}} {{last_name}}</li>
+    {{else}}
+        <li> empty </li>    
+    {{/if}}
+</ul>

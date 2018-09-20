@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  --main-bg-color: brown;
+  --color-layout: #EEEEEE;
+  --color-layout-dark: #E2DEDE;
+  --color-logo: #337ab7;
+  --color-logo-dark: #8F121E;
+  --color-dark: #070707;
+  --color-background: #343A40;
+  --color-background-light: #DBD3D8;
+  --color-white: #fff;
+  --sign-font: sans-serif;
+  --base-font: serif;
+}
+
+body {
+    position: relative;
+    background: var(--color-white);
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+}
+  
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+  
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: relative;
+  height: 100%;
+}
+
+.app__inner {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.app__inner .main-error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-logo);
+    font-size: 24px;
+}
+
+.app__inner .loading {
+    color: var(--color-logo);
+    font-size: 19px;
+    margin-left: 20px;
+}

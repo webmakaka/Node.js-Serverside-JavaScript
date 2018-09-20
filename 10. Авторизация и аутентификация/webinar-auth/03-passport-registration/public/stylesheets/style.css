@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+.title {
+  margin: 0 auto;
+  text-align: center;
+  color: coral;
+  font-size: 21px;
+  text-transform: uppercase; 
+}
+
+.top-block {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.top-block__link {
+  margin-right: 15px;
+}

@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  min-height: rem(40px);
+  color: var(--color-logo);
+}
+.app__logo {
+  margin-bottom: 0;
+}

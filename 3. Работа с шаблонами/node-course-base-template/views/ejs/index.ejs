@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EJS compilation demo</title>
+    <style>
+        h1 {
+            color: #9b9bb4;
+        }
+    </style>
+</head>
+<body>
+    <h1>EJS Template Engine</h1>
+    <% function user(user) { %>
+        <li><strong><%= user.name %></strong> is a <%= user.age %> year old <%= user.species %>.</li>
+    <% } %>
+    <ul>
+        <% f.users.map(user) %>
+    </ul>
+    <% const topics = [1, 2, 3]
+       topics.forEach((elem) => { %>
+       <li><%= elem %></li>
+    <% })%>
+
+    <ul>
+        <% const pets = [
+            { name: "Hazel" },
+            { name: "Crys"},
+            { name: "Catcher"},
+            { log: "xxx"},
+        ]%>
+        <%  pets.forEach((pet) => { %>
+                <%- include('included', {
+                    pet: pet
+                }) %>
+        <%  }) %>
+    </ul>
+</body>
+</html>

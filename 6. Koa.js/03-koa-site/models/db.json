@@ -1,0 +1,45 @@
+{
+  "works": [
+    {
+      "name": "loftblog",
+      "link": "loftblog.ru",
+      "desc": "Сайт с уроками по web разработке",
+      "picture": "/img/work/loftblog.jpg"
+    },
+    {
+      "name": "itloft",
+      "link": "itloft.ru",
+      "desc": "Сайт агенства интернет решений itloft",
+      "picture": "/img/work/itloft.jpg"
+    },
+    {
+      "name": "landing",
+      "link": "landing.kiev.ua",
+      "desc": "Сайт по разработке лендингов с гарантией",
+      "picture": "/img/work/landingsloft.jpg"
+    },
+    {
+      "name": "Личный сайт",
+      "link": "kovalchuk.us",
+      "desc": "Личный сайт Дмитрия Ковальчука",
+      "picture": "/img/work/kovalchuk.png"
+    },
+    {
+      "name": "loftschool",
+      "link": "loftschool.com",
+      "desc": "Школа онлайн образования",
+      "picture": "/img/work/loftschool.png"
+    },
+    {
+      "name": "test",
+      "link": "url.net",
+      "desc": "My best bot",
+      "picture": "upload\\bot-icon.png"
+    }
+  ],
+  "user": {
+    "login": "admin",
+    "hash": "1c6568a099cba6d5779362547ea7e8d1eea74670ad6ff6102a67360d3a41b3ec8fef5c590067fa3284e20cffed577269c6f9d6d4653d67344ecdbe18bb6f81e76759c0081203f762f68cf5c2b3703642505a8d86532556fe120f9618adce5464c39049dd2b7d8ec302b41b1abaa8a07c86acb7ad1b8b5687601d6974b3f00780e8fd09b8f247371ff50276a4230c9016d76acb0f8c736bc5ab19a4685c625e949507d05c73e41e913fcba6e2eab1773fa09734da19800cbcad11d136f2cdbcd3873bda99415d1b475828c040f81d30abb567250f843f463d35f67b62afa310c1e671de59fc3bc3fb6dc27b2dbfda4aa40f3d526074ff763d92bf5bb27a5bc48d52ca76f0a5e1c28e533fa4fc9ee2037bca79e0b72feca303ccbc65175f0d21cec3a1f7aab4f503948965bd024911fad8bfa0f36060639e8862628f6ccf34d798ccd7ec64007a1d78f0ebd82ca6ad74f3a445c5f7447772bbfec1b88106d0f428aa912c1a34cbc26c1f715b6d52bba0b09c5d3e0f9dd380ca652d53bd4fd6a7b94590d6cb56de000754d547202198e4526aa3817298130328b4f092b3da40d04200916da70f04408e3c87d876ebfb03a0895b27e559edc10ebcd423e79a12f3198f8e5417162cdec8f4747c9f5ae9037208196ac20ac46110248b677f11fd502e6503d2efe346e5524b0813764b5ac3dd7e06193edd792453bb25cf4751f4facf",
+    "salt": "448711ee57a4bb6bd4b9287db4819c0f"
+  }
+}

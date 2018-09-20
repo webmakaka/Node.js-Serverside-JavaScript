@@ -1,0 +1,14 @@
+extends common/base
+
+block title
+    | Netflix
+
+block main
+    .wrapper
+        #root(class="app")!= content
+
+block script
+    if preloadedState
+        script(src="static/js/main.9d09cd43.js")
+
+    

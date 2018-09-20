@@ -1,0 +1,17 @@
+extends ../_template
+
+block content
+  H1 Send email
+
+  form.form#mail(action='/' method="POST" enctype="application/x-www-form-urlencoded")
+      .form__subtitle Связаться со мной
+      .status
+      label.form__input-line
+          input(name="name" type="text" placeholder="Имя").form__input
+      label.form__input-line
+          input(name="email" type="email" placeholder="E-mail").form__input
+      textarea(placeholder="Ваше сообщение" name="text").form__textarea
+      .form__btns.form__input-line
+          input(name="" type="submit" value="Отправить").form__btn-send
+          input(name="" type="reset" value="Очистить").form__btn-reset
+

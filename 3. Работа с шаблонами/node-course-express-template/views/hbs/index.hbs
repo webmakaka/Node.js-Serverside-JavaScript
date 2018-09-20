@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EJS compilation demo</title>
+    <style>
+        h1 {
+            color: #9b9bb4;
+        }
+    </style>
+</head>
+<body>
+<h1>Handlebars Template Engine</h1>
+    <ul>
+        {{#each f.users}}
+            <li class="{{this.name}}">{{@index}}: {{this.name}}</li>
+        {{else}}
+            <li>Список пуст</li>
+        {{/each}}
+    </ul>
+    {{#bold f.story}}
+        <div>{{intro}}</div>
+    {{/bold}}
+
+    <div id="particles">
+        {{{link 'Vegetables' href='/veggies' }}}
+    </div>
+
+    {{#each f.people}}
+        {{> user this}}
+    {{/each}}
+    <hr>
+
+    {{> (whichPartial class="block") }}
+
+    <hr>
+
+</body>
+</html>

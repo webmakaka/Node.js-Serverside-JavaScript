@@ -1,0 +1,25 @@
+extends ../layouts/login_layout.pug
+
+block title
+  title Авторизация
+
+block content
+  .login-container
+    .modal-wrapper.login-wrapper
+      .modal-header
+        h2.modal-title Авторизуйтесь
+      .modal-body
+        form.form#login(role="form")
+          //- Вывод сообщений с сервера
+          .server-mes.error-mes
+          .server-mes.success-mes
+          //- Логин
+          .form-group
+            label.label(for="login") Логин
+            input.input#name(type="text", name="login", placeholder="Введите логин", qtip-content="Вы не ввели логин")
+          //- Пароль
+          .form-group
+            label.label(for="password") Пароль
+            input.input#password(type="password", name="password", placeholder="Введите пароль", qtip-content="Вы не ввели пароль")
+          //- Кнопка "Отправить"
+          button.btn(type="submit") Войти

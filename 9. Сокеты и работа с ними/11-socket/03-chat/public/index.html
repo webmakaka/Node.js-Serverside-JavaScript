@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <title>Chat</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      Наш простой чат на Socket.io
+    </div>
+    <div class="content">
+      <sidebar class="sidebar">
+        <div class="users">
+          <div class="users__title">Текущие пользователи: <span id='room'></span></div>
+          <ul class="users__list">
+            <li class="users__item">Test</li>
+          </ul>
+        </div>
+        <div class="rooms">
+          <div class="rooms__title">Текущие комнаты</div>
+          <ul class="rooms__list">
+            <li class="rooms__item">First</li>
+            <li class="rooms__item">Second</li>
+            <li class="rooms__item">Third</li>
+          </ul>
+        </div>
+      </sidebar>
+      <main class="main">
+        <form action="" class="msg">
+          <input type="text" id="msg" class="msg__input">
+          <button type="submit" class="msg__btn">Отправить</button>
+        </form>
+        <div class="chat">
+          
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>

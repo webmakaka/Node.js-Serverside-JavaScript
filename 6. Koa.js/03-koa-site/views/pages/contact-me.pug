@@ -1,0 +1,43 @@
+extends ../layouts/main_layout.pug
+
+block link
+  -var selected = 'Связаться со мной';
+
+block title
+  title Связаться со мной
+
+block content
+  section.aboutbox
+    .header-big-wrap
+      h2.aboutbox-header-big У вас интересный проект? Напишите мне!
+    .aboutbox-body
+      .contact-form-wrap
+        form.form.contact-form#contact-me
+          //- Вывод сообщений с сервера
+          .server-mes.error-mes
+          .server-mes.success-mes
+          //- Имя и email в одну строку, для этого обернем в div.form-line
+          .form-line.clearfix
+            //- name
+            .form-group.pull-left
+              label.label(for="name") Имя
+              input.input(type="text", name="name", placeholder="Как к вам обращаться", qtip-content="Вы не ввели имя")
+            //- email
+            .form-group.pull-right
+              label.label(for="email") Email
+              input.input(type="text", name="email", placeholder="Куда мне писать", qtip-position="right", qtip-content="Вы не ввели email")
+            //- Сообщение 
+          .form-group
+            label.label(for="message") Сообщение
+            textarea.textarea#message(name="message", rows="3", placeholder="Кратко в чем суть", qtip-content="Что вы от меня хотите?")
+          //- Капча
+          //- .form-group.captcha-wrap.clearfix
+          //-   label.label(for="captcha") Введите код, указанный на картинке
+          //-   img.captcha.pull-left(src="img/bg_captcha.jpg", alt="код")         
+          //-   input.input.input-captcha.pull-right(type="text", name="captcha", placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код")           
+          //- Отправить 
+          .button-group
+            button.btn(type="submit") Отправить
+            button.btn.btn-res(type="reset") Очистить
+
+                             

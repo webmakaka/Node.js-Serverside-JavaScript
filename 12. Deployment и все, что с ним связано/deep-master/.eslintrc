@@ -1,0 +1,11 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "mocha"
+  ],
+  "rules": {
+    "mocha/no-exclusive-tests": "error",
+    "no-extra-semi": "error",
+    "semi": [2, "always"]
+  }
+}

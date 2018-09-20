@@ -1,0 +1,33 @@
+{
+  "presets": [
+    ["env", { 
+      "modules": false,
+      "targets": {
+        "browsers": ["last 2 versions", "ie >= 11"]
+      }
+    }],
+    "react",
+    "stage-0"
+  ],
+  "retainLines": true,
+  "plugins": [
+    "transform-class-properties",
+  ],
+  "env": {
+    "test": {
+      "presets": [["env"], "stage-0", "react", "flow"]
+    },
+    "development": {
+      "plugins": [
+        [
+          "babel-plugin-transform-require-ignore",
+          {
+            "extensions": [
+              ".css"
+            ]
+          }
+        ]
+      ]
+    }
+  }
+}

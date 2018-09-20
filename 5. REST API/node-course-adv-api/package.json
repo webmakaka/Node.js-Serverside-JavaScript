@@ -1,0 +1,29 @@
+{
+  "name": "templates",
+  "version": "1.0.0",
+  "description": "using templates",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ivashchenko a.",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "lowdb": "^1.0.0",
+    "lru-cache": "^4.1.1",
+    "pug": "^2.0.0-rc.4"
+  }
+}

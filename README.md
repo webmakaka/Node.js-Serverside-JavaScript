@@ -1,2 +1,3 @@
-# Node.js-Serverside-JavaScript
-[loftschool] Node.js серверный JavaScript [2018, RUS]
+# [loftschool] Node.js серверный JavaScript [2018, RUS]
+
+https://github.com/andrIvash/node-course
